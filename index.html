@@ -496,31 +496,35 @@ textarea {
     </main>
 
     <section id="contact" style="color:rgb(255, 255, 255); margin-top:18px;">
-      <div class="card reveal">
-        <h3 style="margin-top:0">Contact</h3>
-        <p class="muted">If you'd like to work together, offer feedback, or discuss opportunities...</p>
-        <form onsubmit="event.preventDefault(); alert('Demo form — update the form action or replace with your contact email.');">
-          <div class="form-row" style="margin-top:8px">  
-            <input class="input" placeholder="Your name" required />
-            <input class="input" placeholder="Your email" required />
-          </div>
-          <div style="margin-top:8px">
-            <textarea placeholder="Message" required></textarea>
-          </div>
-          <div style="margin-top:10px;text-align:right" >
-            <button class="btn-prim">Send Message</button>
-          </div>
-        </form>
+  <div class="card reveal">
+    <h3 style="margin-top:0">Contact</h3>
+    <p class="muted">If you'd like to work together, offer feedback, or discuss opportunities...</p>
 
-        <div style="margin-top:12px;color: #ffffff;">
-          <div><strong>Email:</strong> <em>yff86058@example.com</em></div>
-          <div><strong>GitHub:</strong> <em>github.com/Mujib-Adil</em></div>
-          <div><strong>linkedin:</strong> <em>linkedin.com/mujib_adil</em></div>
-        
-        </div>
+    <!-- Replace "your@email.com" with your actual email -->
+    <form action="https://formspree.io/f/mzzadpev" method="POST">
+      <div class="form-row" style="margin-top:8px">  
+        <input class="input" type="text" name="name" placeholder="Your name" required />
+        <input class="input" type="email" name="email" placeholder="Your email" required />
       </div>
-    </section>
-    <div class="footer">© <span id="yr"></span> <strong style="color: aliceblue;">Mujiburehman Adil</strong> — All rights reserved.</div>
+      <div style="margin-top:8px">
+        <textarea name="message" placeholder="Message" required></textarea>
+      </div>
+      <div style="margin-top:10px;text-align:right">
+        <button class="btn-prim" type="submit">Send Message</button>
+      </div>
+    </form>
+
+    <div style="margin-top:12px;color: #ffffff;">
+      <div><strong>Email:</strong> <em>yff86058@example.com</em></div>
+      <div><strong>GitHub:</strong> <em>github.com/Mujib-Adil</em></div>
+      <div><strong>LinkedIn:</strong> <em>linkedin.com/mujib_adil</em></div>
+    </div>
+  </div>
+</section>
+
+<div class="footer">© <span id="yr"></span> 
+  <strong style="color: aliceblue;">Mujiburehman Adil</strong> — All rights reserved.
+</div>
 
     <script>
         // Hamburger menu functionality
@@ -578,4 +582,5 @@ textarea {
         });
     </script>
 </body>
+
 </html>
